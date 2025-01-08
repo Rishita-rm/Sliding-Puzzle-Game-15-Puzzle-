@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliding Puzzle Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Sliding Puzzle Game</h1>
+    
+    <!-- Custom Tile Size Selector -->
+    <div class="grid-size-selector">
+      <label for="grid-size">Choose Grid Size:</label>
+      <select id="grid-size">
+        <option value="3">3x3</option>
+        <option value="4" selected>4x4</option>
+        <option value="5">5x5</option>
+      </select>
+    </div>
+
+    <div id="game-board" class="game-board"></div>
+    
+    <div id="game-status">
+      <p>Moves: <span id="move-counter">0</span></p>
+      <p>Time: <span id="timer">00:00</span></p>
+      <p>Best Moves: <span id="best-moves">0</span></p>
+      <p>Best Time: <span id="best-time">00:00</span></p>
+      <button id="hint-btn">Show Hint</button>
+      <button id="restart-btn">Restart Game</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
