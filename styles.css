@@ -1,0 +1,82 @@
+/* Same styling as before, but added some styles for new elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.grid-size-selector {
+  margin-bottom: 20px;
+}
+
+.game-board {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.tile {
+  width: 100px;
+  height: 100px;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+.tile.empty {
+  background-color: white;
+  pointer-events: none;
+}
+
+#game-status {
+  margin-top: 20px;
+}
+
+#move-counter, #timer, #best-moves, #best-time {
+  font-weight: bold;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#hint-btn {
+  margin-top: 10px;
+}
